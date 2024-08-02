@@ -16,6 +16,17 @@ module.exports = {
       xl: "1280px",
       xxl: "1400px",
     },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'black': '#000000',
+      'gray-100': '#F3F6F6',
+      'slate-500': '#566A7F',
+      'blue-400': '#6CA9E6',
+      'blue-500': '#418FDE',
+      'indigo-50': '#ECF4FC',
+    }
   },
   plugins: [],
 };

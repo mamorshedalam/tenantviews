@@ -4,7 +4,7 @@
 
 @layer components {
   .x-animation {
-    @apply transition-all duration-300 ease-in;
+    @apply transition-all duration-500 ease-in;
   }
   .x-animation-fade {
     @apply transition-opacity duration-150 ease-linear;
@@ -12,6 +12,18 @@
 }
 
 @layer base {
+  body {
+    @apply bg-gray-100 text-sm;
+  }
+
+  aside {
+    @apply max-w-[280px] w-1/6 min-h-svh flex flex-col justify-between bg-white text-slate-500;
+  }
+
+  main {
+    @apply w-5/6;
+  }
+
   a,
   button {
     @apply inline-block cursor-pointer;
