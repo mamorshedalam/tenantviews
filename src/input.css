@@ -12,18 +12,6 @@
 }
 
 @layer base {
-  body {
-    @apply flex bg-gray-100 text-sm;
-  }
-
-  aside {
-    @apply max-w-[280px] w-1/6 max-h-svh overflow-y-scroll flex flex-col justify-between bg-white text-slate-500;
-  }
-
-  main {
-    @apply w-5/6 text-gray-700;
-  }
-
   a,
   button {
     @apply inline-block cursor-pointer;

@@ -23,8 +23,8 @@
      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body>
-     <aside>
+<body class="relative flex bg-gray-100 text-sm">
+     <aside class="max-w-[280px] w-1/6 max-h-svh overflow-y-scroll flex flex-col justify-between bg-white text-slate-500">
           <!-- top -->
           <div>
                <a href="index.html" class="block py-5">
@@ -283,10 +283,10 @@
           </div>
      </aside>
 
-     <main>
-          <header class="flex items-center justify-between w-full bg-white py-5 px-8 x-DropShadow">
+     <main class="w-5/6 text-gray-700">
+          <header class="flex items-center justify-between w-full bg-white text-slate-500 py-4 px-6 x-DropShadow">
                <div class="flex items-center gap-2.5">
-                    <label for="search" class="text-slate-500">
+                    <label for="search" class="">
                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd"
                                    d="M9.16669 3.33335C5.94503 3.33335 3.33335 5.94503 3.33335 9.16669C3.33335 12.3883 5.94503 15 9.16669 15C12.3883 15 15 12.3883 15 9.16669C15 5.94503 12.3883 3.33335 9.16669 3.33335ZM1.66669 9.16669C1.66669 5.02455 5.02455 1.66669 9.16669 1.66669C13.3088 1.66669 16.6667 5.02455 16.6667 9.16669C16.6667 13.3088 13.3088 16.6667 9.16669 16.6667C5.02455 16.6667 1.66669 13.3088 1.66669 9.16669Z"
@@ -296,19 +296,36 @@
                                    fill="currentColor" />
                          </svg>
                     </label>
-                    <input id="search" type="text" placeholder="Type / for search and recents..." class="relative w-60 border-b border-transparent focus:border-slate-500">
+                    <input id="search" type="text" placeholder="Type / for search and recents..." class="relative w-60 border-b border-transparent focus:border-slate-500 text-gray-700">
                </div>
-               <div class="text-right">
-                    <h3 class="font-semibold">Thomas Anree</h3>
-                    <span class="text-slate-500">Land lord</span>
+               <div class="flex items-center gap-2.5">
+                    <div class="text-right">
+                         <h3 class="font-semibold text-gray-700">Thomas Anree</h3>
+                         <span>Land lord</span>
+                    </div>
+                    <a href="" class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" class="lucide lucide-user-round">
+                              <circle cx="12" cy="8" r="5" />
+                              <path d="M20 21a8 8 0 0 0-16 0" />
+                         </svg>
+                    </a>
+                    <button>
+                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                   d="M0.410765 0.910765C0.736202 0.585328 1.26384 0.585328 1.58928 0.910765L6.00002 5.32151L10.4108 0.910765C10.7362 0.585328 11.2638 0.585328 11.5893 0.910765C11.9147 1.2362 11.9147 1.76384 11.5893 2.08928L6.58928 7.08927C6.26384 7.41471 5.7362 7.41471 5.41077 7.08927L0.410765 2.08928C0.0853277 1.76384 0.0853277 1.2362 0.410765 0.910765Z"
+                                   fill="currentColor" />
+                         </svg>
+                    </button>
+
                </div>
           </header>
 
-          <div class="p-8">
-               <section class="flex items-center justify-between mb-8">
+          <div class="p-6 h-[calc(100svh-80px)] overflow-y-scroll">
+               <section class="flex items-center justify-between mb-6">
                     <h2 class="font-semibold text-2xl -tracking-[2%]">Good Morning, <span class="font-normal text-slate-500">Thomas Anree!</span></h2>
                     <div class="flex text-white gap-6">
-                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg hover:bg-blue-400">
+                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <g clip-path="url(#clip0_331_215)">
                                         <path d="M14.1667 10C14.1667 10.69 13.6075 11.25 12.9167 11.25H11.25V12.9167C11.25 13.6067 10.6908 14.1667 10 14.1667C9.30917 14.1667 8.75 13.6067 8.75 12.9167V11.25H7.08333C6.3925 11.25 5.83333 10.69 5.83333 10C5.83333 9.31 6.3925 8.75 7.08333 8.75H8.75V7.08333C8.75 6.39333 9.30917 5.83333 10 5.83333C10.6908 5.83333 11.25 6.39333 11.25 7.08333V8.75H12.9167C13.6075 8.75 14.1667 9.31 14.1667 10ZM20 4.58333V15.4167C20 17.9433 17.9442 20 15.4167 20H4.58333C2.05583 20 0 17.9433 0 15.4167V4.58333C0 2.05667 2.05583 0 4.58333 0H15.4167C17.9442 0 20 2.05667 20 4.58333ZM17.5 4.58333C17.5 3.43417 16.565 2.5 15.4167 2.5H4.58333C3.435 2.5 2.5 3.43417 2.5 4.58333V15.4167C2.5 16.5658 3.435 17.5 4.58333 17.5H15.4167C16.565 17.5 17.5 16.5658 17.5 15.4167V4.58333Z"
@@ -322,7 +339,7 @@
                               </svg>
                               Add New Property
                          </a>
-                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg hover:bg-blue-400">
+                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <g clip-path="url(#clip0_331_217)">
                                         <path d="M20 4.16667V6.66667H0V4.16667C0 2.78833 1.12167 1.66667 2.5 1.66667H5V0H6.66667V1.66667H13.3333V0H15V1.66667H17.5C18.8783 1.66667 20 2.78833 20 4.16667ZM20 14.1667C20 17.3833 17.3825 20 14.1667 20C10.9508 20 8.33333 17.3833 8.33333 14.1667C8.33333 10.95 10.9508 8.33333 14.1667 8.33333C17.3825 8.33333 20 10.95 20 14.1667ZM16.4225 15.2442L15 13.8217V11.6667H13.3333V14.5117L15.2442 16.4225L16.4225 15.2442ZM6.66667 14.1667C6.66667 11.8092 7.75667 9.70833 9.4575 8.33333H0V20H9.4575C7.75667 18.625 6.66667 16.5242 6.66667 14.1667Z"
@@ -336,7 +353,7 @@
                               </svg>
                               Schedule Viewing
                          </a>
-                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg hover:bg-blue-400">
+                         <a class="flex items-center gap-2 bg-blue-500 py-3 px-5 rounded-lg">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <g clip-path="url(#clip0_331_219)">
                                         <path d="M12.5 5.83335H8.47501V4.51168C8.47494 4.1821 8.37716 3.85993 8.19402 3.58591C8.01088 3.3119 7.7506 3.09833 7.4461 2.97222C7.1416 2.8461 6.80655 2.81309 6.48329 2.87737C6.16004 2.94165 5.8631 3.10033 5.63001 3.33335L0.730013 8.23251C0.261335 8.70133 -0.00195313 9.3371 -0.00195312 10C-0.00195313 10.6629 0.261335 11.2987 0.730013 11.7675L5.63001 16.6667C5.8631 16.8997 6.16004 17.0584 6.48329 17.1227C6.80655 17.1869 7.1416 17.1539 7.4461 17.0278C7.7506 16.9017 8.01088 16.6881 8.19402 16.4141C8.37716 16.1401 8.47494 15.8179 8.47501 15.4883V14.1667H13.3333C14.659 14.168 15.93 14.6952 16.8674 15.6326C17.8048 16.57 18.332 17.841 18.3333 19.1667C18.3333 19.3877 18.4211 19.5997 18.5774 19.7559C18.7337 19.9122 18.9457 20 19.1667 20C19.3877 20 19.5997 19.9122 19.7559 19.7559C19.9122 19.5997 20 19.3877 20 19.1667V13.3333C19.9978 11.3449 19.2069 9.43853 17.8009 8.03248C16.3948 6.62644 14.4885 5.83555 12.5 5.83335Z"
@@ -352,7 +369,7 @@
                          </a>
                     </div>
                </section>
-               <section class="grid grid-cols-3 gap-8 mb-8">
+               <section class="grid grid-cols-3 gap-6 mb-6">
                     <div class="flex justify-between bg-white rounded-xl p-5">
                          <div>
                               <p class="font-medium text-slate-500 mb-2">Active properties</p>
@@ -390,15 +407,268 @@
                          </div>
                     </div>
                </section>
-               <section class="grid grid-cols-3 gap-8 mb-8">
-                    <div class="flex justify-between bg-white rounded-xl p-5">
-
+               <section class="grid grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white rounded-xl p-5">
+                         <h4 class="font-semibold text-lg pb-4">Application Stages</h4>
+                         <table class="w-full text-base text-left">
+                              <thead>
+                                   <tr class="flex w-full border-b border-dotted border-slate-500/50 py-3">
+                                        <th class="basis-0 flex-grow ">Stage</th>
+                                        <th>Number</th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">Received</td>
+                                        <td>245</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">Background Check</td>
+                                        <td>192</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">Credit Check</td>
+                                        <td>175</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">Failed</td>
+                                        <td>120</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">Passed</td>
+                                        <td>85</td>
+                                   </tr>
+                              </tbody>
+                         </table>
                     </div>
-                    <div class="flex justify-between bg-white rounded-xl p-5">
-
+                    <div class="bg-white rounded-xl p-5">
+                         <h4 class="font-semibold text-lg pb-4">Expiring tenancies</h4>
+                         <table class="w-full text-base text-left">
+                              <thead>
+                                   <tr class="flex w-full border-b border-dotted border-slate-500/50 py-3">
+                                        <th class="basis-0 flex-grow ">Days Left</th>
+                                        <th>Total Expiring Certificates</th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">4 Months</td>
+                                        <td>10</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">3 Months</td>
+                                        <td>15</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">30 Days</td>
+                                        <td>20</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">7 Days</td>
+                                        <td>5</td>
+                                   </tr>
+                                   <tr class="flex w-full border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3">
+                                        <td class="basis-0 flex-grow font-medium">3 Days</td>
+                                        <td>8</td>
+                                   </tr>
+                              </tbody>
+                         </table>
                     </div>
-                    <div class="flex justify-between bg-white rounded-xl p-5">
-
+                    <div class="bg-white rounded-xl p-5">
+                         <h4 class="font-semibold text-lg">Property Certificates</h4>
+                         <div class="flex flex-col justify-center items-center h-full pb-6">
+                              <h5 class="text-8xl font-bold">85</h5>
+                              <p class="text-slate-500">Property Certificates Expiring</p>
+                         </div>
+                    </div>
+               </section>
+               <section class="grid grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl col-span-2">
+                         <h4 class="font-semibold text-lg p-5">Applicant Progress Overview</h4>
+                         <table class="w-full text-left">
+                              <thead>
+                                   <tr class="w-full flex border-b border-slate-500 border-dotted bg-slate-200 py-1.5 px-5">
+                                        <th class="basis-2/6">Applicant Name</th>
+                                        <th class="basis-2/6">Property Address</th>
+                                        <th class="basis-1/6">Stage</th>
+                                        <th class="basis-1/6">Status</th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr class="w-full flex border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3 px-5">
+                                        <td class="basis-2/6">Michael Brown</td>
+                                        <td class="basis-2/6">123 Main St</td>
+                                        <td class="basis-1/6">Background Check</td>
+                                        <td class="basis-1/6">In Progress</td>
+                                   </tr>
+                                   <tr class="w-full flex border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3 px-5">
+                                        <td class="basis-2/6">Emily White</td>
+                                        <td class="basis-2/6">456 Elm St</td>
+                                        <td class="basis-1/6">Credit Check</td>
+                                        <td class="basis-1/6">Completed</td>
+                                   </tr>
+                                   <tr class="w-full flex border-dashed border-slate-500/50 [&:not(:last-child)]:border-b py-3 px-5">
+                                        <td class="basis-2/6">David Green</td>
+                                        <td class="basis-2/6">789 Oak St</td>
+                                        <td class="basis-1/6">Approval</td>
+                                        <td class="basis-1/6">Pending</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+                    <div class="bg-white rounded-xl p-5">
+                         <h4 class="font-semibold text-lg pb-4">Recent Activities</h4>
+                         <table class="w-full text-slate-500">
+                              <tbody>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Albert Flores</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-green-500">Signed</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Albert Flores</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-green-500">Signed</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Jenny Wilson</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-green-500">Signed</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Kristin Watson</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-amber-300">Pending</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Cody Fisher</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-amber-300">Pending</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Marvin McKinney</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-blue-500">Leases</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                                   <tr class="flex w-full text-left py-1.5">
+                                        <td class="basis-0 flex-grow">
+                                             <a href="" class="flex items-center gap-4">
+                                                  <span class="flex justify-center items-center w-12 h-12 rounded-full bg-slate-200">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="lucide lucide-user-round">
+                                                            <circle cx="12" cy="8" r="5" />
+                                                            <path d="M20 21a8 8 0 0 0-16 0" />
+                                                       </svg>
+                                                  </span>
+                                                  <div>
+                                                       <h5 class="font-medium text-slate-950">Marvin McKinney</h5>
+                                                       <p>Saler</p>
+                                                  </div>
+                                             </a>
+                                        </td>
+                                        <td class="flex items-center gap-4 font-semibold">
+                                             <span class="text-blue-500">Leases</span>
+                                             <span>ID2540</span>
+                                        </td>
+                                   </tr>
+                              </tbody>
+                         </table>
                     </div>
                </section>
           </div>
