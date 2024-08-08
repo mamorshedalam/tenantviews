@@ -38,6 +38,14 @@
                background: transparent;
           }
 
+          input:focus,
+          select:focus,
+          textarea:focus {
+               outline: 0;
+               outline-offset: 0;
+               background: transparent;
+          }
+
           .x-animation {
                transition-property: all;
                transition-duration: 500ms;
@@ -422,39 +430,52 @@
                          </a>
                     </div>
                </section>
+               <!-- 2nd section -->
                <section class="max-w-screen-lg sm:rounded-xl rounded-md bg-white md:py-6 xs:py-py-4 py-2.5 mx-auto">
+                    <!-- section header -->
                     <h3 class="text-blue-500 font-semibold md:text-3xl xs:text-2xl text-xl text-center sm:mb-4 mb-2">Add new property</h3>
                     <p class="text-center text-gray-700 md:mb-12 xs:mb-8 mb-5">Please complete the form below.</p>
+                    <!-- form -->
                     <form>
+                         <!-- 1st form field -->
                          <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
                               <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Property details</h4>
+                              <!-- form div -->
                               <div class="md:col-span-2">
                                    <label for="address" class="font-medium text-xs">Address</label>
-                                   <input type="text" name="address" id="address" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="address" id="address" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div class="md:col-span-2">
                                    <label for="postCode" class="font-medium text-xs">Post code</label>
-                                   <input type="text" name="postCode" id="postCode" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="postCode" id="postCode" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
+                              <!-- dropdown div -->
                               <div>
                                    <label for="propertyType" class="font-medium text-xs">Property type</label>
                                    <select name="propertyType" id="propertyType" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
                                         <option value="House" class="text-gray-700">House</option>
                                         <option value="Apartment" class="text-gray-700">Apartment</option>
+                                        <option value="Apartment" class="text-gray-700">Apartment</option>
                                    </select>
                               </div>
                               <div>
                                    <label for="bedroomNumber" class="font-medium text-xs">Number of bedrooms</label>
-                                   <input type="text" name="bedroomNumber" id="bedroomNumber" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="bedroomNumber" id="bedroomNumber" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="bedroomNumber2" class="font-medium text-xs">Number of bathroom</label>
-                                   <input type="text" name="bedroomNumber2" id="bedroomNumber2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="bedroomNumber2" id="bedroomNumber2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="footage" class="font-medium text-xs">Squire footage</label>
-                                   <input type="text" name="footage" id="footage" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="footage" id="footage" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
+                              <!-- upload file -->
                               <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
                                    <h4 class="w-full font-semibold sm:text-base text-sm">Upload gas safety certificates</h4>
                                    <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="gasFile" x-data="{ files: null }">
@@ -468,6 +489,7 @@
                                         </span>
                                    </label>
                               </div>
+                              <!-- upload file -->
                               <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
                                    <h4 class="w-full font-semibold sm:text-base text-sm">Upload electrical safety certificates</h4>
                                    <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="electricalFile" x-data="{ files: null }">
@@ -481,6 +503,7 @@
                                         </span>
                                    </label>
                               </div>
+                              <!-- upload file -->
                               <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
                                    <h4 class="w-full font-semibold sm:text-base text-sm">Upload energy performance certificates</h4>
                                    <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="energyFile" x-data="{ files: null }">
@@ -494,6 +517,7 @@
                                         </span>
                                    </label>
                               </div>
+                              <!-- upload file -->
                               <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
                                    <h4 class="w-full font-semibold sm:text-base text-sm">Upload fire safety certificates</h4>
                                    <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="fireFile" x-data="{ files: null }">
@@ -508,15 +532,18 @@
                                    </label>
                               </div>
                          </div>
+                         <!-- 2nd form field -->
                          <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
                               <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Tenant information</h4>
                               <div>
                                    <label for="firstName" class="font-medium text-xs">First Name</label>
-                                   <input type="text" name="firstName" id="firstName" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="firstName" id="firstName" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="lastName" class="font-medium text-xs">Last Name</label>
-                                   <input type="text" name="lastName" id="lastName" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="lastName" id="lastName" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="email" class="font-medium text-xs">Your Email</label>
@@ -528,18 +555,22 @@
                               </div>
                               <div class="md:col-span-2">
                                    <label for="currentAdd" class="font-medium text-xs">Current address</label>
-                                   <input type="text" name="currentAdd" id="currentAdd" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="currentAdd" id="currentAdd" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                          </div>
+                         <!-- 3rd form field -->
                          <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
                               <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Landlord information</h4>
                               <div>
                                    <label for="firstName2" class="font-medium text-xs">First Name</label>
-                                   <input type="text" name="firstName2" id="firstName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="firstName2" id="firstName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="lastName2" class="font-medium text-xs">Last Name</label>
-                                   <input type="text" name="lastName2" id="lastName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="lastName2" id="lastName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
                                    <label for="email2" class="font-medium text-xs">Your Email</label>
@@ -547,13 +578,16 @@
                               </div>
                               <div>
                                    <label for="contact2" class="font-medium text-xs">Contact</label>
-                                   <input type="tel" name="contact2" id="contact2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="tel" name="contact2" id="contact2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div class="md:col-span-2">
                                    <label for="currentAdd2" class="font-medium text-xs">Current address</label>
-                                   <input type="text" name="currentAdd2" id="currentAdd2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <input type="text" name="currentAdd2" id="currentAdd2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                          </div>
+                         <!-- 4th form field -->
                          <div class="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
                               <h4 class="sm:col-span-3 font-semibold sm:text-base text-sm">Services</h4>
                               <div>
@@ -580,7 +614,9 @@
                                    </select>
                               </div>
                          </div>
+                         <!-- last form field -->
                          <div class="flex flex-wrap items-center justify-between sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 pt-4">
+                              <!-- rest button -->
                               <button type="reset" class="flex items-center gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg xs:order-1 order-2">
                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.5827 1C11.2494 0.666667 10.7493 0.666667 10.416 1L4.16602 7.25L1.58268 4.66667C1.24935 4.33333 0.749349 4.33333 0.416016 4.66667C0.0826823 5 0.0826823 5.5 0.416016 5.83333L3.58268 9C3.74935 9.16667 3.91602 9.25 4.16602 9.25C4.41602 9.25 4.58268 9.16667 4.74935 9L11.5827 2.16667C11.916 1.83333 11.916 1.33333 11.5827 1Z"
@@ -588,7 +624,9 @@
                                    </svg>
                                    Cancel
                               </button>
-                              <label class="xs:w-fit w-full gap-2 text-slate-500 border border-slate-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg xs:order-2 order-1" for="gasFile" x-data="{ files: null }">
+                              <!-- upload file -->
+                              <label class="xs:w-fit w-full gap-2 text-slate-500 border border-slate-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg xs:order-2 order-1" for="gasFile"
+                                   x-data="{ files: null }">
                                    <input type="file" class="hidden" name="gasFile" id="gasFile" x-on:change="files = Object.values($event.target.files)">
                                    <span class="flex items-center justify-center gap-2">
                                         <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -598,6 +636,7 @@
                                         <span x-text="files ? files.map(file => file.name).join(', ') : 'Add property'"></span>
                                    </span>
                               </label>
+                              <!-- submit button -->
                               <button type="submit" class="flex items-center gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg order-3">
                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.5827 1C11.2494 0.666667 10.7493 0.666667 10.416 1L4.16602 7.25L1.58268 4.66667C1.24935 4.33333 0.749349 4.33333 0.416016 4.66667C0.0826823 5 0.0826823 5.5 0.416016 5.83333L3.58268 9C3.74935 9.16667 3.91602 9.25 4.16602 9.25C4.41602 9.25 4.58268 9.16667 4.74935 9L11.5827 2.16667C11.916 1.83333 11.916 1.33333 11.5827 1Z"
