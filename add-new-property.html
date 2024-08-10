@@ -58,7 +58,7 @@
      </style>
 </head>
 
-<body class="relative flex bg-gray-100 sm:text-sm text-xs" x-cloak x-data="{aside: false}">
+<body class="relative flex bg-gray-100 sm:text-sm text-xs" x-cloak x-data="{aside: false, slideOverOpen: false }">
      <!-- aside -->
      <aside x-cloak :class="aside ? 'block': 'hidden'" class="xl:block xl:relative fixed inset-0 xl:w-auto w-full h-full z-[99]">
           <div class="relative w-[280px] max-h-svh overflow-y-scroll flex flex-col justify-between bg-white text-slate-500 z-10">
@@ -134,7 +134,7 @@
                                    </button>
                                    <!-- dropdown menu -->
                                    <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
-                                        <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">All properties</button></li>
+                                        <li><a href="all-properties.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">All properties</a></li>
                                         <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Certificates</button></li>
                                    </ul>
                               </div>
@@ -386,7 +386,7 @@
                     <h2 class="font-semibold xs:text-2xl text-lg -tracking-[2%] lg:mb-0 sm:mb-3 mb-1.5">Add new property</h2>
                     <!-- top btn -->
                     <div class="flex xs:flex-row flex-col text-white lg:gap-6 md:gap-4 gap-2">
-                         <a class="flex items-center gap-2 bg-blue-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
+                         <a href="add-new-property.html" class="flex items-center gap-2 bg-blue-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
                               <svg class="lg:w-5 lg:h-5 w-4 h-4" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <g clip-path="url(#clip0_331_215)">
                                         <path d="M14.1667 10C14.1667 10.69 13.6075 11.25 12.9167 11.25H11.25V12.9167C11.25 13.6067 10.6908 14.1667 10 14.1667C9.30917 14.1667 8.75 13.6067 8.75 12.9167V11.25H7.08333C6.3925 11.25 5.83333 10.69 5.83333 10C5.83333 9.31 6.3925 8.75 7.08333 8.75H8.75V7.08333C8.75 6.39333 9.30917 5.83333 10 5.83333C10.6908 5.83333 11.25 6.39333 11.25 7.08333V8.75H12.9167C13.6075 8.75 14.1667 9.31 14.1667 10ZM20 4.58333V15.4167C20 17.9433 17.9442 20 15.4167 20H4.58333C2.05583 20 0 17.9433 0 15.4167V4.58333C0 2.05667 2.05583 0 4.58333 0H15.4167C17.9442 0 20 2.05667 20 4.58333ZM17.5 4.58333C17.5 3.43417 16.565 2.5 15.4167 2.5H4.58333C3.435 2.5 2.5 3.43417 2.5 4.58333V15.4167C2.5 16.5658 3.435 17.5 4.58333 17.5H15.4167C16.565 17.5 17.5 16.5658 17.5 15.4167V4.58333Z"
