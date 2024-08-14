@@ -34,6 +34,7 @@ module.exports = {
       'blue-500': '#418FDE',
       'green-500': '#1DBF5E',
       'green-400': '#3DCC76',
+      'amber-400': '#FFB733',
       'amber-300': '#FFC04D',
     }
   },

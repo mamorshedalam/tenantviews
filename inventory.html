@@ -384,7 +384,7 @@
           <div class="md:p-6 xs:p-4 p-2.5 sm:h-[calc(100svh-80px)] h-[calc(100svh-52px)] overflow-y-scroll">
                <section class="lg:flex items-center justify-between md:mb-6 sm:mb-4 mb-3">
                     <!-- grading -->
-                    <h2 class="font-semibold xs:text-2xl text-lg -tracking-[2%] lg:mb-0 sm:mb-3 mb-1.5">Tenacy overview</h2>
+                    <h2 class="font-semibold xs:text-2xl text-lg -tracking-[2%] lg:mb-0 sm:mb-3 mb-1.5">Referencing overviews</h2>
                     <!-- top btn -->
                     <div class="flex xs:flex-row flex-col text-white lg:gap-6 md:gap-4 gap-2">
                          <a href="add-new-property.html" class="flex items-center gap-2 bg-blue-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
@@ -435,7 +435,7 @@
                <section class="grid xs:grid-cols-3 grid-cols-1 lg:gap-6 md:gap-4 gap-2 md:mb-6 sm:mb-4 mb-3">
                     <div class="flex justify-between bg-white rounded-xl md:p-5 xs:p-3 p-2">
                          <div>
-                              <p class="font-medium text-slate-500 mb-2">Active</p>
+                              <p class="font-medium text-slate-500 mb-2">Upcoming</p>
                               <h4 class="font-semibold sm:text-4xl xs:text-2xl text-xl">30</h4>
                          </div>
                          <div class="flex items-center justify-center bg-blue-500/10 sm:w-10 sm:h-10 w-8 h-8 rounded-md">
@@ -447,7 +447,7 @@
                     </div>
                     <div class="flex justify-between bg-white rounded-xl md:p-5 xs:p-3 p-2">
                          <div>
-                              <p class="font-medium text-slate-500 mb-2">Pending</p>
+                              <p class="font-medium text-slate-500 mb-2">Progress</p>
                               <h4 class="font-semibold sm:text-4xl xs:text-2xl text-xl">10</h4>
                          </div>
                          <div class="flex items-center justify-center bg-blue-500/10 sm:w-10 sm:h-10 w-8 h-8 rounded-md">
@@ -459,7 +459,7 @@
                     </div>
                     <div class="flex justify-between bg-white rounded-xl md:p-5 xs:p-3 p-2">
                          <div>
-                              <p class="font-medium text-slate-500 mb-2">Expire</p>
+                              <p class="font-medium text-slate-500 mb-2">Complete</p>
                               <h4 class="font-semibold sm:text-4xl xs:text-2xl text-xl">5</h4>
                          </div>
                          <div class="flex items-center justify-center bg-blue-500/10 sm:w-10 sm:h-10 w-8 h-8 rounded-md">
@@ -473,7 +473,7 @@
                <!-- 4th section -->
                <section class="bg-white rounded-xl">
                     <div class="lg:flex justify-between items-center sm:p-5 p-3">
-                         <h4 class="font-semibold sm:text-lg xs:text-base text-sm lg:mb-0 mb-4">Tenancy agreements <span
+                         <h4 class="font-semibold sm:text-lg xs:text-base text-sm lg:mb-0 mb-4">Inventory booking table <span
                                    class="font-medium text-sm text-gray-100 bg-blue-500 rounded-full px-3 py-1">200</span></h4>
                          <form class="flex items-center xs:gap-2 gap-1 w-fit border border-gray-600 rounded-lg xs:px-3 px-1.5 py-1.5 text-slate-500">
                               <label for="tableSearch">
@@ -491,8 +491,8 @@
                                    <option class="text-gray-700">Property</option>
                                    <option value="select" class="text-gray-700">select</option>
                               </select>
-                              <select name="type" id="type" class="text-xs uppercase">
-                                   <option class="text-gray-700">Type</option>
+                              <select name="date" id="date" class="text-xs uppercase">
+                                   <option class="text-gray-700">date</option>
                                    <option value="select" class="text-gray-700">select</option>
                               </select> 
                          </form>
@@ -505,9 +505,9 @@
                                         <th class="font-normal px-4 py-2">id</th>
                                         <th class="font-normal px-4 py-2">tenent</th>
                                         <th class="font-normal px-4 py-2">property address</th>
-                                        <th class="font-normal px-4 py-2">postcode</th>
-                                        <th class="font-normal px-4 py-2">start date</th>
-                                        <th class="font-normal px-4 py-2">end date</th>
+                                        <th class="font-normal px-4 py-2">Type</th>
+                                        <th class="font-normal px-4 py-2">Inventory date</th>
+                                        <th class="font-normal px-4 py-2">Status</th>
                                         <th class="font-normal px-4 py-2">action</th>
                                    </tr>
                               </thead>
@@ -526,9 +526,9 @@
                                              <span>Darlene Robertson</span>
                                         </td>
                                         <td class="p-4">4517 Washington Ave. Manchester, Kentucky 39495</td>
-                                        <td class="p-4">2580</td>
+                                        <td class="p-4">Checkout</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-green-400 rounded-full py-1 px-3">Complete</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
@@ -564,9 +564,9 @@
                                              <span>Kristin Watson</span>
                                         </td>
                                         <td class="p-4">1901 Thornridge Cir. Shiloh, Hawaii 81063</td>
-                                        <td class="p-4">5560</td>
+                                        <td class="p-4">Checkin</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-amber-400 rounded-full py-1 px-3">In-progress</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
@@ -602,9 +602,9 @@
                                              <span>Ronald Richards</span>
                                         </td>
                                         <td class="p-4">6391 Elgin St. Celina, Delaware 10299</td>
-                                        <td class="p-4">9850</td>
+                                        <td class="p-4">Checkout</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-green-400 rounded-full py-1 px-3">Complete</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
@@ -640,9 +640,9 @@
                                              <span>Esther Howard</span>
                                         </td>
                                         <td class="p-4">2118 Thornridge Cir. Syracuse, Connecticut 35624</td>
-                                        <td class="p-4">4725</td>
+                                        <td class="p-4">Checkin</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-blue-500 rounded-full py-1 px-3">Upcoming</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
@@ -678,9 +678,9 @@
                                              <span>Brooklyn Simmons</span>
                                         </td>
                                         <td class="p-4">4140 Parker Rd. Allentown, New Mexico 31134</td>
-                                        <td class="p-4">9857</td>
+                                        <td class="p-4">Checkin</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-blue-500 rounded-full py-1 px-3">Upcoming</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
@@ -716,9 +716,9 @@
                                              <span>Brooklyn Simmons</span>
                                         </td>
                                         <td class="p-4">4140 Parker Rd. Allentown, New Mexico 31134</td>
-                                        <td class="p-4">9857</td>
+                                        <td class="p-4">Checkout</td>
                                         <td class="p-4">Nov 12, 2024</td>
-                                        <td class="p-4">Nov 12, 2024</td>
+                                        <td class="p-4"><a class="text-white text-xs bg-amber-400 rounded-full py-1 px-3">In-progress</a></td>
                                         <td class="flex items-center gap-2 p-4">
                                              <!-- toggle Property overview sidebar -->
                                              <button @click="descriptionSidebar=true">
