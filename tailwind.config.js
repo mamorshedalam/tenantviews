@@ -24,6 +24,7 @@ module.exports = {
       'indigo-50': '#ECF4FC',
       'gray-700': '#2D3748',
       'gray-600': '#E4E7EC',
+      'gray-500': '#667085',
       'gray-400': '#98A2B3',
       'gray-200': '#E9ECEC',
       'gray-100': '#F3F6F6',

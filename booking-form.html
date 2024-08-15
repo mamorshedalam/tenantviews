@@ -383,7 +383,7 @@
           <div class="md:p-6 xs:p-4 p-2.5 sm:h-[calc(100svh-80px)] h-[calc(100svh-52px)] overflow-y-scroll">
                <section class="lg:flex items-center justify-between md:mb-6 sm:mb-4 mb-3">
                     <!-- grading -->
-                    <h2 class="font-semibold xs:text-2xl text-lg -tracking-[2%] lg:mb-0 sm:mb-3 mb-1.5">Add new property</h2>
+                    <h2 class="font-semibold xs:text-2xl text-lg -tracking-[2%] lg:mb-0 sm:mb-3 mb-1.5">Inventory booking form</h2>
                     <!-- top btn -->
                     <div class="flex xs:flex-row flex-col text-white lg:gap-6 md:gap-4 gap-2">
                          <a href="add-new-property.html" class="flex items-center gap-2 bg-blue-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
@@ -433,108 +433,14 @@
                <!-- 2nd section -->
                <section class="max-w-screen-lg sm:rounded-xl rounded-md bg-white md:py-6 xs:py-py-4 py-2.5 mx-auto">
                     <!-- section header -->
-                    <h3 class="text-blue-500 font-semibold md:text-3xl xs:text-2xl text-xl text-center sm:mb-4 mb-2">Add new property</h3>
-                    <p class="text-center text-gray-700 md:mb-12 xs:mb-8 mb-5">Please complete the form below.</p>
+                    <h3 class="text-blue-500 font-semibold md:text-3xl xs:text-2xl text-xl text-center sm:mb-4 mb-2">Booking form</h3>
+                    <p class="max-w-screen-md mx-auto text-center text-gray-700 md:mb-12 xs:mb-8 mb-5">Please complete the form below to secure your booking. We aim to respond within the same day to
+                         accommodate your schedule, whether it's an immediate need or future planning.</p>
                     <!-- form -->
                     <form>
-                         <!-- 1st form field -->
-                         <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
-                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Property details</h4>
-                              <!-- form div -->
-                              <div class="md:col-span-2">
-                                   <label for="address" class="font-medium text-xs">Address</label>
-                                   <input type="text" name="address" id="address" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
-                                        placeholder="Write here">
-                              </div>
-                              <div class="md:col-span-2">
-                                   <label for="postCode" class="font-medium text-xs">Post code</label>
-                                   <input type="text" name="postCode" id="postCode" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
-                                        placeholder="Write here">
-                              </div>
-                              <!-- dropdown div -->
-                              <div>
-                                   <label for="propertyType" class="font-medium text-xs">Property type</label>
-                                   <select name="propertyType" id="propertyType" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
-                                        <option value="House" class="text-gray-700">House</option>
-                                        <option value="Apartment" class="text-gray-700">Apartment</option>
-                                        <option value="Apartment" class="text-gray-700">Apartment</option>
-                                   </select>
-                              </div>
-                              <div>
-                                   <label for="bedroomNumber" class="font-medium text-xs">Number of bedrooms</label>
-                                   <input type="text" name="bedroomNumber" id="bedroomNumber" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
-                                        placeholder="Write here">
-                              </div>
-                              <div>
-                                   <label for="bedroomNumber2" class="font-medium text-xs">Number of bathroom</label>
-                                   <input type="text" name="bedroomNumber2" id="bedroomNumber2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
-                                        placeholder="Write here">
-                              </div>
-                              <div>
-                                   <label for="footage" class="font-medium text-xs">Squire footage</label>
-                                   <input type="text" name="footage" id="footage" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
-                                        placeholder="Write here">
-                              </div>
-                              <!-- upload file -->
-                              <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
-                                   <h4 class="w-full font-semibold sm:text-base text-sm">Upload gas safety certificates</h4>
-                                   <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="gasFile" x-data="{ files: null }">
-                                        <input type="file" class="hidden" name="gasFile" id="gasFile" x-on:change="files = Object.values($event.target.files)">
-                                        <span class="flex items-center gap-2">
-                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M6.25866 5.42508L8.16699 3.50841V11.5001C8.16699 11.7211 8.25479 11.9331 8.41107 12.0893C8.56735 12.2456 8.77931 12.3334 9.00033 12.3334C9.22134 12.3334 9.4333 12.2456 9.58958 12.0893C9.74586 11.9331 9.83366 11.7211 9.83366 11.5001V3.50841L11.742 5.42508C11.8195 5.50318 11.9116 5.56518 12.0132 5.60749C12.1147 5.64979 12.2236 5.67158 12.3337 5.67158C12.4437 5.67158 12.5526 5.64979 12.6541 5.60749C12.7557 5.56518 12.8479 5.50318 12.9253 5.42508C13.0034 5.34761 13.0654 5.25544 13.1077 5.15389C13.15 5.05234 13.1718 4.94342 13.1718 4.83341C13.1718 4.7234 13.15 4.61448 13.1077 4.51293C13.0654 4.41138 13.0034 4.31921 12.9253 4.24174L9.59199 0.90841C9.51274 0.832543 9.41928 0.773072 9.31699 0.73341C9.11411 0.650061 8.88654 0.650061 8.68366 0.73341C8.58137 0.773072 8.48791 0.832543 8.40866 0.90841L5.07533 4.24174C4.99763 4.31944 4.93599 4.41168 4.89394 4.5132C4.85189 4.61472 4.83025 4.72353 4.83025 4.83341C4.83025 4.94329 4.85189 5.0521 4.89394 5.15362C4.93599 5.25514 4.99763 5.34738 5.07533 5.42508C5.15302 5.50278 5.24527 5.56441 5.34678 5.60646C5.4483 5.64851 5.55711 5.67015 5.66699 5.67015C5.77687 5.67015 5.88568 5.64851 5.9872 5.60646C6.08872 5.56441 6.18096 5.50278 6.25866 5.42508ZM16.5003 9.00008C16.2793 9.00008 16.0673 9.08787 15.9111 9.24415C15.7548 9.40043 15.667 9.6124 15.667 9.83341V14.8334C15.667 15.0544 15.5792 15.2664 15.4229 15.4227C15.2666 15.5789 15.0547 15.6667 14.8337 15.6667H3.16699C2.94598 15.6667 2.73402 15.5789 2.57774 15.4227C2.42146 15.2664 2.33366 15.0544 2.33366 14.8334V9.83341C2.33366 9.6124 2.24586 9.40043 2.08958 9.24415C1.9333 9.08787 1.72134 9.00008 1.50033 9.00008C1.27931 9.00008 1.06735 9.08787 0.91107 9.24415C0.75479 9.40043 0.666992 9.6124 0.666992 9.83341V14.8334C0.666992 15.4965 0.930384 16.1323 1.39923 16.6012C1.86807 17.07 2.50395 17.3334 3.16699 17.3334H14.8337C15.4967 17.3334 16.1326 17.07 16.6014 16.6012C17.0703 16.1323 17.3337 15.4965 17.3337 14.8334V9.83341C17.3337 9.6124 17.2459 9.40043 17.0896 9.24415C16.9333 9.08787 16.7213 9.00008 16.5003 9.00008Z"
-                                                       fill="white" />
-                                             </svg>
-                                             <span x-text="files ? files.map(file => file.name).join(', ') : 'Choose file'"></span>
-                                        </span>
-                                   </label>
-                              </div>
-                              <!-- upload file -->
-                              <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
-                                   <h4 class="w-full font-semibold sm:text-base text-sm">Upload electrical safety certificates</h4>
-                                   <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="electricalFile" x-data="{ files: null }">
-                                        <input type="file" class="hidden" name="electricalFile" id="electricalFile" x-on:change="files = Object.values($event.target.files)">
-                                        <span class="flex items-center gap-2">
-                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M6.25866 5.42508L8.16699 3.50841V11.5001C8.16699 11.7211 8.25479 11.9331 8.41107 12.0893C8.56735 12.2456 8.77931 12.3334 9.00033 12.3334C9.22134 12.3334 9.4333 12.2456 9.58958 12.0893C9.74586 11.9331 9.83366 11.7211 9.83366 11.5001V3.50841L11.742 5.42508C11.8195 5.50318 11.9116 5.56518 12.0132 5.60749C12.1147 5.64979 12.2236 5.67158 12.3337 5.67158C12.4437 5.67158 12.5526 5.64979 12.6541 5.60749C12.7557 5.56518 12.8479 5.50318 12.9253 5.42508C13.0034 5.34761 13.0654 5.25544 13.1077 5.15389C13.15 5.05234 13.1718 4.94342 13.1718 4.83341C13.1718 4.7234 13.15 4.61448 13.1077 4.51293C13.0654 4.41138 13.0034 4.31921 12.9253 4.24174L9.59199 0.90841C9.51274 0.832543 9.41928 0.773072 9.31699 0.73341C9.11411 0.650061 8.88654 0.650061 8.68366 0.73341C8.58137 0.773072 8.48791 0.832543 8.40866 0.90841L5.07533 4.24174C4.99763 4.31944 4.93599 4.41168 4.89394 4.5132C4.85189 4.61472 4.83025 4.72353 4.83025 4.83341C4.83025 4.94329 4.85189 5.0521 4.89394 5.15362C4.93599 5.25514 4.99763 5.34738 5.07533 5.42508C5.15302 5.50278 5.24527 5.56441 5.34678 5.60646C5.4483 5.64851 5.55711 5.67015 5.66699 5.67015C5.77687 5.67015 5.88568 5.64851 5.9872 5.60646C6.08872 5.56441 6.18096 5.50278 6.25866 5.42508ZM16.5003 9.00008C16.2793 9.00008 16.0673 9.08787 15.9111 9.24415C15.7548 9.40043 15.667 9.6124 15.667 9.83341V14.8334C15.667 15.0544 15.5792 15.2664 15.4229 15.4227C15.2666 15.5789 15.0547 15.6667 14.8337 15.6667H3.16699C2.94598 15.6667 2.73402 15.5789 2.57774 15.4227C2.42146 15.2664 2.33366 15.0544 2.33366 14.8334V9.83341C2.33366 9.6124 2.24586 9.40043 2.08958 9.24415C1.9333 9.08787 1.72134 9.00008 1.50033 9.00008C1.27931 9.00008 1.06735 9.08787 0.91107 9.24415C0.75479 9.40043 0.666992 9.6124 0.666992 9.83341V14.8334C0.666992 15.4965 0.930384 16.1323 1.39923 16.6012C1.86807 17.07 2.50395 17.3334 3.16699 17.3334H14.8337C15.4967 17.3334 16.1326 17.07 16.6014 16.6012C17.0703 16.1323 17.3337 15.4965 17.3337 14.8334V9.83341C17.3337 9.6124 17.2459 9.40043 17.0896 9.24415C16.9333 9.08787 16.7213 9.00008 16.5003 9.00008Z"
-                                                       fill="white" />
-                                             </svg>
-                                             <span x-text="files ? files.map(file => file.name).join(', ') : 'Choose file'"></span>
-                                        </span>
-                                   </label>
-                              </div>
-                              <!-- upload file -->
-                              <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
-                                   <h4 class="w-full font-semibold sm:text-base text-sm">Upload energy performance certificates</h4>
-                                   <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="energyFile" x-data="{ files: null }">
-                                        <input type="file" class="hidden" name="energyFile" id="energyFile" x-on:change="files = Object.values($event.target.files)">
-                                        <span class="flex items-center gap-2">
-                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M6.25866 5.42508L8.16699 3.50841V11.5001C8.16699 11.7211 8.25479 11.9331 8.41107 12.0893C8.56735 12.2456 8.77931 12.3334 9.00033 12.3334C9.22134 12.3334 9.4333 12.2456 9.58958 12.0893C9.74586 11.9331 9.83366 11.7211 9.83366 11.5001V3.50841L11.742 5.42508C11.8195 5.50318 11.9116 5.56518 12.0132 5.60749C12.1147 5.64979 12.2236 5.67158 12.3337 5.67158C12.4437 5.67158 12.5526 5.64979 12.6541 5.60749C12.7557 5.56518 12.8479 5.50318 12.9253 5.42508C13.0034 5.34761 13.0654 5.25544 13.1077 5.15389C13.15 5.05234 13.1718 4.94342 13.1718 4.83341C13.1718 4.7234 13.15 4.61448 13.1077 4.51293C13.0654 4.41138 13.0034 4.31921 12.9253 4.24174L9.59199 0.90841C9.51274 0.832543 9.41928 0.773072 9.31699 0.73341C9.11411 0.650061 8.88654 0.650061 8.68366 0.73341C8.58137 0.773072 8.48791 0.832543 8.40866 0.90841L5.07533 4.24174C4.99763 4.31944 4.93599 4.41168 4.89394 4.5132C4.85189 4.61472 4.83025 4.72353 4.83025 4.83341C4.83025 4.94329 4.85189 5.0521 4.89394 5.15362C4.93599 5.25514 4.99763 5.34738 5.07533 5.42508C5.15302 5.50278 5.24527 5.56441 5.34678 5.60646C5.4483 5.64851 5.55711 5.67015 5.66699 5.67015C5.77687 5.67015 5.88568 5.64851 5.9872 5.60646C6.08872 5.56441 6.18096 5.50278 6.25866 5.42508ZM16.5003 9.00008C16.2793 9.00008 16.0673 9.08787 15.9111 9.24415C15.7548 9.40043 15.667 9.6124 15.667 9.83341V14.8334C15.667 15.0544 15.5792 15.2664 15.4229 15.4227C15.2666 15.5789 15.0547 15.6667 14.8337 15.6667H3.16699C2.94598 15.6667 2.73402 15.5789 2.57774 15.4227C2.42146 15.2664 2.33366 15.0544 2.33366 14.8334V9.83341C2.33366 9.6124 2.24586 9.40043 2.08958 9.24415C1.9333 9.08787 1.72134 9.00008 1.50033 9.00008C1.27931 9.00008 1.06735 9.08787 0.91107 9.24415C0.75479 9.40043 0.666992 9.6124 0.666992 9.83341V14.8334C0.666992 15.4965 0.930384 16.1323 1.39923 16.6012C1.86807 17.07 2.50395 17.3334 3.16699 17.3334H14.8337C15.4967 17.3334 16.1326 17.07 16.6014 16.6012C17.0703 16.1323 17.3337 15.4965 17.3337 14.8334V9.83341C17.3337 9.6124 17.2459 9.40043 17.0896 9.24415C16.9333 9.08787 16.7213 9.00008 16.5003 9.00008Z"
-                                                       fill="white" />
-                                             </svg>
-                                             <span x-text="files ? files.map(file => file.name).join(', ') : 'Choose file'"></span>
-                                        </span>
-                                   </label>
-                              </div>
-                              <!-- upload file -->
-                              <div class="md:col-span-2 flex flex-wrap sm:gap-4 gap-2">
-                                   <h4 class="w-full font-semibold sm:text-base text-sm">Upload fire safety certificates</h4>
-                                   <label class="w-fit gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg" for="fireFile" x-data="{ files: null }">
-                                        <input type="file" class="hidden" name="fireFile" id="fireFile" x-on:change="files = Object.values($event.target.files)">
-                                        <span class="flex items-center gap-2">
-                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M6.25866 5.42508L8.16699 3.50841V11.5001C8.16699 11.7211 8.25479 11.9331 8.41107 12.0893C8.56735 12.2456 8.77931 12.3334 9.00033 12.3334C9.22134 12.3334 9.4333 12.2456 9.58958 12.0893C9.74586 11.9331 9.83366 11.7211 9.83366 11.5001V3.50841L11.742 5.42508C11.8195 5.50318 11.9116 5.56518 12.0132 5.60749C12.1147 5.64979 12.2236 5.67158 12.3337 5.67158C12.4437 5.67158 12.5526 5.64979 12.6541 5.60749C12.7557 5.56518 12.8479 5.50318 12.9253 5.42508C13.0034 5.34761 13.0654 5.25544 13.1077 5.15389C13.15 5.05234 13.1718 4.94342 13.1718 4.83341C13.1718 4.7234 13.15 4.61448 13.1077 4.51293C13.0654 4.41138 13.0034 4.31921 12.9253 4.24174L9.59199 0.90841C9.51274 0.832543 9.41928 0.773072 9.31699 0.73341C9.11411 0.650061 8.88654 0.650061 8.68366 0.73341C8.58137 0.773072 8.48791 0.832543 8.40866 0.90841L5.07533 4.24174C4.99763 4.31944 4.93599 4.41168 4.89394 4.5132C4.85189 4.61472 4.83025 4.72353 4.83025 4.83341C4.83025 4.94329 4.85189 5.0521 4.89394 5.15362C4.93599 5.25514 4.99763 5.34738 5.07533 5.42508C5.15302 5.50278 5.24527 5.56441 5.34678 5.60646C5.4483 5.64851 5.55711 5.67015 5.66699 5.67015C5.77687 5.67015 5.88568 5.64851 5.9872 5.60646C6.08872 5.56441 6.18096 5.50278 6.25866 5.42508ZM16.5003 9.00008C16.2793 9.00008 16.0673 9.08787 15.9111 9.24415C15.7548 9.40043 15.667 9.6124 15.667 9.83341V14.8334C15.667 15.0544 15.5792 15.2664 15.4229 15.4227C15.2666 15.5789 15.0547 15.6667 14.8337 15.6667H3.16699C2.94598 15.6667 2.73402 15.5789 2.57774 15.4227C2.42146 15.2664 2.33366 15.0544 2.33366 14.8334V9.83341C2.33366 9.6124 2.24586 9.40043 2.08958 9.24415C1.9333 9.08787 1.72134 9.00008 1.50033 9.00008C1.27931 9.00008 1.06735 9.08787 0.91107 9.24415C0.75479 9.40043 0.666992 9.6124 0.666992 9.83341V14.8334C0.666992 15.4965 0.930384 16.1323 1.39923 16.6012C1.86807 17.07 2.50395 17.3334 3.16699 17.3334H14.8337C15.4967 17.3334 16.1326 17.07 16.6014 16.6012C17.0703 16.1323 17.3337 15.4965 17.3337 14.8334V9.83341C17.3337 9.6124 17.2459 9.40043 17.0896 9.24415C16.9333 9.08787 16.7213 9.00008 16.5003 9.00008Z"
-                                                       fill="white" />
-                                             </svg>
-                                             <span x-text="files ? files.map(file => file.name).join(', ') : 'Choose file'"></span>
-                                        </span>
-                                   </label>
-                              </div>
-                         </div>
                          <!-- 2nd form field -->
                          <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
-                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Tenant information</h4>
+                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Personal Details</h4>
                               <div>
                                    <label for="firstName" class="font-medium text-xs">First Name</label>
                                    <input type="text" name="firstName" id="firstName" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
@@ -553,91 +459,153 @@
                                    <label for="contact" class="font-medium text-xs">Contact</label>
                                    <input type="tel" name="contact" id="contact" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
                               </div>
+                         </div>
+                         <!-- 2nd form field -->
+                         <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
+                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Service Required</h4>
+                              <!-- dropdown div -->
                               <div class="md:col-span-2">
-                                   <label for="currentAdd" class="font-medium text-xs">Current address</label>
-                                   <input type="text" name="currentAdd" id="currentAdd" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                   <label for="service" class="font-medium text-xs">Select service*</label>
+                                   <select name="service" id="service" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
+                                        <option value="House" class="text-gray-700">Select</option>
+                                        <option value="Apartment" class="text-gray-700">Apartment</option>
+                                        <option value="Apartment" class="text-gray-700">Apartment</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <!-- 1st form field -->
+                         <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
+                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Property Address</h4>
+                              <!-- form div -->
+                              <div>
+                                   <label for="address" class="font-medium text-xs">Address line 1*</label>
+                                   <input type="text" name="address" id="address" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
+                              </div>
+                              <div>
+                                   <label for="address2" class="font-medium text-xs">Address line 2 (optional)</label>
+                                   <input type="text" name="address2" id="address2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
+                              </div>
+                              <div>
+                                   <label for="city" class="font-medium text-xs">Town or city*</label>
+                                   <input type="text" name="city" id="city" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                              </div>
+                              <div>
+                                   <label for="postCode" class="font-medium text-xs">Post code*</label>
+                                   <input type="text" name="postCode" id="postCode" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
                                         placeholder="Write here">
                               </div>
                          </div>
                          <!-- 3rd form field -->
                          <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
-                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Landlord information</h4>
+                              <h4 class="md:col-span-2 font-semibold sm:text-base text-sm">Property Details</h4>
                               <div>
-                                   <label for="firstName2" class="font-medium text-xs">First Name</label>
-                                   <input type="text" name="firstName2" id="firstName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                   <label for="propertyType" class="font-medium text-xs">Property Type*</label>
+                                   <select name="propertyType" id="propertyType" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
+                                        <option value="Basic" class="text-gray-700">Select</option>
+                                        <option value="Standard" class="text-gray-700">Standard</option>
+                                        <option value="Premium" class="text-gray-700">Premium</option>
+                                   </select>
+                              </div>
+                              <div>
+                                   <label for="furnishOrUn" class="font-medium text-xs">Furnished/Unfurnished*</label>
+                                   <select name="furnishOrUn" id="furnishOrUn" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
+                                        <option value="Basic" class="text-gray-700">Select</option>
+                                        <option value="Standard" class="text-gray-700">Standard</option>
+                                        <option value="Premium" class="text-gray-700">Premium</option>
+                                   </select>
+                              </div>
+                              <div>
+                                   <label for="bedroom" class="font-medium text-xs">Bedrooms*</label>
+                                   <select name="bedroom" id="bedroom" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
+                                        <option value="Basic" class="text-gray-700">Select</option>
+                                        <option value="Standard" class="text-gray-700">Standard</option>
+                                        <option value="Premium" class="text-gray-700">Premium</option>
+                                   </select>
+                              </div>
+                              <div>
+                                   <label for="bathroom" class="font-medium text-xs">Bathrooms*</label>
+                                   <select name="bathroom" id="bathroom" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
+                                        <option value="Basic" class="text-gray-700">Select</option>
+                                        <option value="Standard" class="text-gray-700">Standard</option>
+                                        <option value="Premium" class="text-gray-700">Premium</option>
+                                   </select>
+                              </div>
+                              <div>
+                                   <label for="gasMeter" class="font-medium text-xs">Gas Meter location</label>
+                                   <input type="text" name="gasMeter" id="gasMeter" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
                                         placeholder="Write here">
                               </div>
                               <div>
-                                   <label for="lastName2" class="font-medium text-xs">Last Name</label>
-                                   <input type="text" name="lastName2" id="lastName2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                   <label for="electricMeter" class="font-medium text-xs">Electric Meter location</label>
+                                   <input type="text" name="electricMeter" id="electricMeter" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
                                         placeholder="Write here">
                               </div>
                               <div>
-                                   <label for="email2" class="font-medium text-xs">Your Email</label>
-                                   <input type="email" name="email2" id="email2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1" placeholder="Write here">
+                                   <label for="keyCollection" class="font-medium text-xs">Key Collection Location*</label>
+                                   <input type="text" name="keyCollection" id="keyCollection" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
-                                   <label for="contact2" class="font-medium text-xs">Contact</label>
-                                   <input type="tel" name="contact2" id="contact2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                   <label for="keyTime" class="font-medium text-xs">Key Collection Time</label>
+                                   <input type="text" name="keyTime" id="keyTime" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
                                         placeholder="Write here">
                               </div>
                               <div class="md:col-span-2">
-                                   <label for="currentAdd2" class="font-medium text-xs">Current address</label>
-                                   <input type="text" name="currentAdd2" id="currentAdd2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                   <label for="keyReturn" class="font-medium text-xs">Key Return Location</label>
+                                   <input type="text" name="keyReturn" id="keyReturn" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
                                         placeholder="Write here">
                               </div>
                          </div>
                          <!-- 4th form field -->
-                         <div class="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
-                              <h4 class="sm:col-span-3 font-semibold sm:text-base text-sm">Services</h4>
+                         <div class="grid md:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
+                              <h4 class="sm:col-span-2 font-semibold sm:text-base text-sm">Date and time of visit required</h4>
                               <div>
-                                   <label for="referencingType" class="font-medium text-xs">Referencing type</label>
-                                   <select name="referencingType" id="referencingType" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
-                                        <option value="Basic" class="text-gray-700">Basic</option>
-                                        <option value="Standard" class="text-gray-700">Standard</option>
-                                        <option value="Premium" class="text-gray-700">Premium</option>
-                                   </select>
+                                   <label for="keyDate" class="font-medium text-xs">Date*</label>
+                                   <input type="date" name="keyDate" id="keyDate" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
                               </div>
                               <div>
-                                   <label for="inventory" class="font-medium text-xs">Inventory service</label>
-                                   <select name="inventory" id="inventory" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
-                                        <option value="Include" class="text-gray-700">Include</option>
-                                        <option value="Exclude" class="text-gray-700">Exclude</option>
-                                   </select>
+                                   <label for="keyTime2" class="font-medium text-xs">Key Collection Time</label>
+                                   <input type="time" name="keyTime2" id="keyTime2" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
+                              </div>
+                         </div>
+                         <!-- 4th form field -->
+                         <div class="grid grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
+                              <h4 class="font-semibold sm:text-base text-sm">Tenant Meeting (Optional)</h4>
+                              <div>
+                                   <input type="checkbox" name="1" id="1">
+                                   <label for="1">Basic referencing</label>
                               </div>
                               <div>
-                                   <label for="tenancy" class="font-medium text-xs">Tenancy agreement</label>
-                                   <select name="tenancy" id="tenancy" class="w-full text-gray-400 border border-gray-600 rounded-lg sm:py-3 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1">
-                                        <option value="Basic" class="text-gray-700">Basic</option>
-                                        <option value="Standard" class="text-gray-700">Standard</option>
-                                        <option value="Premium" class="text-gray-700">Premium</option>
-                                   </select>
+                                   <label for="tenantContact" class="font-medium text-xs">Tenant Contact Details</label>
+                                   <input type="tel" name="tenantContact" id="tenantContact" class="w-full border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here">
+                              </div>
+                         </div>
+                         <!-- 4th form field -->
+                         <div class="grid grid-cols-1 sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 py-4">
+                              <h4 class="font-semibold sm:text-base text-sm">Additional Notes</h4>
+                              <div>
+                                   <label for="tenantContact" class="font-medium text-xs">Your Message</label>
+                                   <textarea name="tenantContact" id="tenantContact" class="w-full h-40 border border-gray-600 rounded-lg sm:py-2.5 py-2 sm:px-2 px-1.5 sm:mt-1.5 mt-1"
+                                        placeholder="Write here"></textarea>
                               </div>
                          </div>
                          <!-- last form field -->
-                         <div class="flex flex-wrap items-center justify-between sm:gap-4 gap-2 border-t border-gray-600 text-slate-950 px-8 pt-4">
+                         <div class="flex flex-wrap items-center justify-between sm:gap-4 gap-2 text-slate-950 px-8 pt-4">
                               <!-- rest button -->
-                              <button type="reset" class="flex items-center gap-2 bbg-white text-slate-500 border border-gray-600 drop-shadow-sm lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg xs:order-1 order-2">
-                                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5827 1C11.2494 0.666667 10.7493 0.666667 10.416 1L4.16602 7.25L1.58268 4.66667C1.24935 4.33333 0.749349 4.33333 0.416016 4.66667C0.0826823 5 0.0826823 5.5 0.416016 5.83333L3.58268 9C3.74935 9.16667 3.91602 9.25 4.16602 9.25C4.41602 9.25 4.58268 9.16667 4.74935 9L11.5827 2.16667C11.916 1.83333 11.916 1.33333 11.5827 1Z"
-                                             fill="currentColor" />
+                              <button class="flex items-center gap-2 bg-white text-slate-500 border border-gray-600 drop-shadow-sm lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
+                                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.17462 6.99991L13.4246 1.75824C13.5815 1.60132 13.6697 1.3885 13.6697 1.16658C13.6697 0.944659 13.5815 0.73183 13.4246 0.57491C13.2677 0.417991 13.0549 0.329834 12.833 0.329834C12.611 0.329834 12.3982 0.417991 12.2413 0.57491L6.99962 5.82491L1.75796 0.57491C1.60104 0.417991 1.38821 0.329834 1.16629 0.329834C0.944372 0.329834 0.731543 0.417991 0.574624 0.57491C0.417704 0.73183 0.329547 0.944659 0.329547 1.16658C0.329547 1.3885 0.417704 1.60132 0.574624 1.75824L5.82462 6.99991L0.574624 12.2416C0.496517 12.319 0.434522 12.4112 0.392214 12.5128C0.349907 12.6143 0.328125 12.7232 0.328125 12.8332C0.328125 12.9433 0.349907 13.0522 0.392214 13.1537C0.434522 13.2553 0.496517 13.3474 0.574624 13.4249C0.652093 13.503 0.74426 13.565 0.84581 13.6073C0.947359 13.6496 1.05628 13.6714 1.16629 13.6714C1.2763 13.6714 1.38522 13.6496 1.48677 13.6073C1.58832 13.565 1.68049 13.503 1.75796 13.4249L6.99962 8.17491L12.2413 13.4249C12.3188 13.503 12.4109 13.565 12.5125 13.6073C12.614 13.6496 12.7229 13.6714 12.833 13.6714C12.943 13.6714 13.0519 13.6496 13.1534 13.6073C13.255 13.565 13.3472 13.503 13.4246 13.4249C13.5027 13.3474 13.5647 13.2553 13.607 13.1537C13.6493 13.0522 13.6711 12.9433 13.6711 12.8332C13.6711 12.7232 13.6493 12.6143 13.607 12.5128C13.5647 12.4112 13.5027 12.319 13.4246 12.2416L8.17462 6.99991Z"
+                                             fill="currentColor"></path>
                                    </svg>
                                    Cancel
                               </button>
-                              <!-- upload file -->
-                              <label class="xs:w-fit w-full gap-2 text-slate-500 border border-slate-500 lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg xs:order-2 order-1" for="gasFile"
-                                   x-data="{ files: null }">
-                                   <input type="file" class="hidden" name="gasFile" id="gasFile" x-on:change="files = Object.values($event.target.files)">
-                                   <span class="flex items-center justify-center gap-2">
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                             <path d="M13.332 6.16634H8.33203V1.16634C8.33203 0.945327 8.24423 0.733366 8.08795 0.577086C7.93167 0.420805 7.71971 0.333008 7.4987 0.333008C7.27768 0.333008 7.06572 0.420805 6.90944 0.577086C6.75316 0.733366 6.66536 0.945327 6.66536 1.16634V6.16634H1.66536C1.44435 6.16634 1.23239 6.25414 1.07611 6.41042C0.919829 6.5667 0.832031 6.77866 0.832031 6.99967C0.832031 7.22069 0.919829 7.43265 1.07611 7.58893C1.23239 7.74521 1.44435 7.83301 1.66536 7.83301H6.66536V12.833C6.66536 13.054 6.75316 13.266 6.90944 13.4223C7.06572 13.5785 7.27768 13.6663 7.4987 13.6663C7.71971 13.6663 7.93167 13.5785 8.08795 13.4223C8.24423 13.266 8.33203 13.054 8.33203 12.833V7.83301H13.332C13.553 7.83301 13.765 7.74521 13.9213 7.58893C14.0776 7.43265 14.1654 7.22069 14.1654 6.99967C14.1654 6.77866 14.0776 6.5667 13.9213 6.41042C13.765 6.25414 13.553 6.16634 13.332 6.16634Z"
-                                                  fill="currentColor" />
-                                        </svg>
-                                        <span x-text="files ? files.map(file => file.name).join(', ') : 'Add property'"></span>
-                                   </span>
-                              </label>
                               <!-- submit button -->
-                              <button type="submit" class="flex items-center gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg order-3">
+                              <button type="submit" class="flex items-center gap-2 bg-blue-500 text-white lg:py-3 py-2 lg:px-5 xs:px-3 px-2 rounded-lg">
                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.5827 1C11.2494 0.666667 10.7493 0.666667 10.416 1L4.16602 7.25L1.58268 4.66667C1.24935 4.33333 0.749349 4.33333 0.416016 4.66667C0.0826823 5 0.0826823 5.5 0.416016 5.83333L3.58268 9C3.74935 9.16667 3.91602 9.25 4.16602 9.25C4.41602 9.25 4.58268 9.16667 4.74935 9L11.5827 2.16667C11.916 1.83333 11.916 1.33333 11.5827 1Z"
                                              fill="white" />
