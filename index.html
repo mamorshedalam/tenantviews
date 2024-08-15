@@ -213,7 +213,7 @@
                     <div class="border-t border-slate-500 sm:mb-8 mb-4">
                          <h4 class="uppercase sm:my-5 my-3">SETTINGS & supports</h4>
                          <div class="mb-1" x-data="{sub: true}">
-                              <button @click="sub = !sub" class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
+                              <a href="setting.html" @click="sub = !sub" class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                    <span class="flex items-center gap-2.5">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <g clip-path="url(#clip0_6036_86)">
@@ -235,7 +235,7 @@
                                                   fill="currentColor" />
                                         </svg>
                                    </span>
-                              </button>
+                              </a>
                               <!-- dropdown menu -->
                               <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
                                    <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Roles & Permisions</button></li>
