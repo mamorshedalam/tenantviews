@@ -135,11 +135,11 @@
                                    <!-- dropdown menu -->
                                    <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
                                         <li><a href="all-properties.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">All properties</a></li>
-                                        <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Certificates</button></li>
+                                        <li><a href="certificate.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Certificates</a></li>
                                    </ul>
                               </div>
-                              <div class="mb-1">
-                                   <button @click="active = 'tenancies'" :class="active == 'tenancies' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                              <div class="mb-1" x-data="{sub: true}">
+                                   <button @click="active = 'tenancies'; sub = !sub" :class="active == 'tenancies' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,10 +155,22 @@
                                              </svg>
                                              Tenancies
                                         </span>
+                                        <span>
+                                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M11.5892 0.910734C11.2638 0.585297 10.7362 0.585297 10.4107 0.910734L5.99998 5.32148L1.58923 0.910733C1.2638 0.585296 0.736159 0.585296 0.410723 0.910733C0.0852851 1.23617 0.0852851 1.76381 0.410723 2.08924L5.41072 7.08925C5.73616 7.41468 6.2638 7.41468 6.58923 7.08925L11.5892 2.08925C11.9147 1.76381 11.9147 1.23617 11.5892 0.910734Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </span>
                                    </button>
+                                   <!-- dropdown menu -->
+                                   <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                        <li><a href="tenancie.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Tenancies</a></li>
+                                        <li><a href="agreement.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Agreement</a></li>
+                                   </ul>
                               </div>
                               <div class="mb-1">
-                                   <button @click="active = 'referencing'" :class="active == 'referencing' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                                   <a href="referencing.html" @click="active = 'referencing'" :class="active == 'referencing' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,10 +179,10 @@
                                              </svg>
                                              Referencing
                                         </span>
-                                   </button>
+                                   </a>
                               </div>
-                              <div class="mb-1">
-                                   <button @click="active = 'inventories'" :class="active == 'inventories' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                              <div class="mb-1" x-data="{sub: true}">
+                                   <button @click="active = 'inventories'; sub = !sub" :class="active == 'inventories' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +191,19 @@
                                              </svg>
                                              Inventories
                                         </span>
+                                        <span>
+                                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M11.5892 0.910734C11.2638 0.585297 10.7362 0.585297 10.4107 0.910734L5.99998 5.32148L1.58923 0.910733C1.2638 0.585296 0.736159 0.585296 0.410723 0.910733C0.0852851 1.23617 0.0852851 1.76381 0.410723 2.08924L5.41072 7.08925C5.73616 7.41468 6.2638 7.41468 6.58923 7.08925L11.5892 2.08925C11.9147 1.76381 11.9147 1.23617 11.5892 0.910734Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </span>
                                    </button>
+                                   <!-- dropdown menu -->
+                                   <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                        <li><a href="inventory.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Inventories</a></li>
+                                        <li><a href="booking-form.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Add new property</a></li>
+                                   </ul>
                               </div>
                               <div class="mb-1" x-data="{sub: true}">
                                    <button @click="active = 'landlord'; sub = !sub" :class="active == 'landlord' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
@@ -238,6 +262,7 @@
                               </button>
                               <!-- dropdown menu -->
                               <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                   <li><a href="setting.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Settings</a></li>
                                    <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Roles & Permisions</button></li>
                               </ul>
                          </div>

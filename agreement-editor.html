@@ -136,11 +136,11 @@
                                    <!-- dropdown menu -->
                                    <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
                                         <li><a href="all-properties.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">All properties</a></li>
-                                        <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Certificates</button></li>
+                                        <li><a href="certificate.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Certificates</a></li>
                                    </ul>
                               </div>
-                              <div class="mb-1">
-                                   <button @click="active = 'tenancies'" :class="active == 'tenancies' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                              <div class="mb-1" x-data="{sub: true}">
+                                   <button @click="active = 'tenancies'; sub = !sub" :class="active == 'tenancies' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,10 +156,22 @@
                                              </svg>
                                              Tenancies
                                         </span>
+                                        <span>
+                                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M11.5892 0.910734C11.2638 0.585297 10.7362 0.585297 10.4107 0.910734L5.99998 5.32148L1.58923 0.910733C1.2638 0.585296 0.736159 0.585296 0.410723 0.910733C0.0852851 1.23617 0.0852851 1.76381 0.410723 2.08924L5.41072 7.08925C5.73616 7.41468 6.2638 7.41468 6.58923 7.08925L11.5892 2.08925C11.9147 1.76381 11.9147 1.23617 11.5892 0.910734Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </span>
                                    </button>
+                                   <!-- dropdown menu -->
+                                   <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                        <li><a href="tenancie.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Tenancies</a></li>
+                                        <li><a href="agreement.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Agreement</a></li>
+                                   </ul>
                               </div>
                               <div class="mb-1">
-                                   <button @click="active = 'referencing'" :class="active == 'referencing' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                                   <a href="referencing.html" @click="active = 'referencing'" :class="active == 'referencing' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,10 +180,10 @@
                                              </svg>
                                              Referencing
                                         </span>
-                                   </button>
+                                   </a>
                               </div>
-                              <div class="mb-1">
-                                   <button @click="active = 'inventories'" :class="active == 'inventories' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
+                              <div class="mb-1" x-data="{sub: true}">
+                                   <button @click="active = 'inventories'; sub = !sub" :class="active == 'inventories' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
                                         class="flex justify-between items-center w-full rounded-lg py-2 px-3 hover:bg-indigo-50 hover:text-blue-500">
                                         <span class="flex items-center gap-2.5">
                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +192,19 @@
                                              </svg>
                                              Inventories
                                         </span>
+                                        <span>
+                                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M11.5892 0.910734C11.2638 0.585297 10.7362 0.585297 10.4107 0.910734L5.99998 5.32148L1.58923 0.910733C1.2638 0.585296 0.736159 0.585296 0.410723 0.910733C0.0852851 1.23617 0.0852851 1.76381 0.410723 2.08924L5.41072 7.08925C5.73616 7.41468 6.2638 7.41468 6.58923 7.08925L11.5892 2.08925C11.9147 1.76381 11.9147 1.23617 11.5892 0.910734Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </span>
                                    </button>
+                                   <!-- dropdown menu -->
+                                   <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                        <li><a href="inventory.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Inventories</a></li>
+                                        <li><a href="booking-form.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Add new property</a></li>
+                                   </ul>
                               </div>
                               <div class="mb-1" x-data="{sub: true}">
                                    <button @click="active = 'landlord'; sub = !sub" :class="active == 'landlord' ? 'bg-indigo-50 text-blue-500 font-bold' : 'font-medium'"
@@ -239,6 +263,7 @@
                               </button>
                               <!-- dropdown menu -->
                               <ul :class="sub ? 'max-h-96' : 'max-h-0'" class="overflow-hidden pl-7 font-medium x-animation">
+                                   <li><a href="setting.html" class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Settings</a></li>
                                    <li><button class="w-full text-left py-2 px-3 rounded-lg mt-1 hover:bg-indigo-50 hover:text-blue-500">Roles & Permisions</button></li>
                               </ul>
                          </div>
@@ -626,21 +651,3 @@
 </body>
 
 </html>
-
-
-<!-- <div class="flex justify-between">
-     <a class="flex items-center gap-2 bg-white text-slate-500 border border-gray-600 drop-shadow-sm py-2 xs:px-4 px-3 rounded-lg">
-          <svg class="lg:w-5 lg:h-5 w-4 h-4" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M18 9.03278C18 9.44678 17.6647 9.78278 17.25 9.78278C16.8353 9.78278 16.5 9.44678 16.5 9.03278C16.5 4.89728 13.1355 1.53278 9 1.53278C6.6345 1.53278 4.41375 2.66528 3.00675 4.53278H5.25C5.66475 4.53278 6 4.86878 6 5.28278C6 5.69678 5.66475 6.03278 5.25 6.03278H2.25C1.42275 6.03278 0.75 5.36003 0.75 4.53278V1.53278C0.75 1.11878 1.08525 0.782776 1.5 0.782776C1.91475 0.782776 2.25 1.11878 2.25 1.53278V3.11078C3.942 1.18928 6.393 0.0327759 9 0.0327759C13.9628 0.0327759 18 4.07003 18 9.03278ZM15.75 12.0328H12.75C12.3352 12.0328 12 12.368 12 12.7828C12 13.1975 12.3352 13.5328 12.75 13.5328H14.9932C13.5855 15.4003 11.3655 16.5328 9 16.5328C4.8645 16.5328 1.5 13.1683 1.5 9.03278C1.5 8.61878 1.16475 8.28278 0.75 8.28278C0.33525 8.28278 0 8.61878 0 9.03278C0 13.9955 4.03725 18.0328 9 18.0328C11.607 18.0328 14.058 16.8763 15.75 14.9548V16.5328C15.75 16.9475 16.0853 17.2828 16.5 17.2828C16.9147 17.2828 17.25 16.9475 17.25 16.5328V13.5328C17.25 12.7055 16.5772 12.0328 15.75 12.0328ZM9.372 3.88178C9.01125 3.67553 8.55375 3.80153 8.349 4.16078C8.349 4.16078 6.06825 8.16728 6.0525 8.22128C5.94225 8.58653 6.012 8.98703 6.23925 9.29378C6.46725 9.60053 6.83025 9.78278 7.212 9.78278H10.2833L8.34975 13.16C8.14425 13.5193 8.26875 13.9783 8.628 14.1838C8.74575 14.2513 8.874 14.2828 9 14.2828C9.26025 14.2828 9.51375 14.147 9.65175 13.9055L11.7997 10.1495C12.0442 9.77978 12.066 9.30728 11.856 8.91578C11.6467 8.52503 11.241 8.28203 10.797 8.28203H7.722L9.651 4.90403C9.8565 4.54403 9.73125 4.08653 9.372 3.88178Z"
-                    fill="currentColor" />
-          </svg>
-          Request Renewal
-     </a>
-     <a class="flex items-center gap-2 bg-blue-500 text-white border border-blue-500 drop-shadow-sm py-2 xs:px-4 px-3 rounded-lg">
-          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M11.5837 1C11.2503 0.666667 10.7503 0.666667 10.417 1L4.16699 7.25L1.58366 4.66667C1.25033 4.33333 0.750326 4.33333 0.416992 4.66667C0.0836589 5 0.0836589 5.5 0.416992 5.83333L3.58366 9C3.75033 9.16667 3.91699 9.25 4.16699 9.25C4.41699 9.25 4.58366 9.16667 4.75033 9L11.5837 2.16667C11.917 1.83333 11.917 1.33333 11.5837 1Z"
-                    fill="currentColor" />
-          </svg>
-          Upload new certificate
-     </a>
-</div> -->
