@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- TITLE & FAVICON -->
+     <link rel="icon" href="./assets/img/logo/favicon.png" />
+     <title>Tenantviews | Dashboard</title>
+
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+     <!-- TAILWIND CSS -->
+     <link href="./assets/css/output.css" rel="stylesheet">
+     <!-- ALPINE JS -->
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+     <!-- CUSTOM CSS -->
+     <style>
+     </style>
+</head>
+
+<body class="max-w-[1000px] mx-auto bg-white text-slate-950 text-sm">
+     <!-- HEADER -->
+     <header class="relaitve flex justify-between items-center bg-gray-100 border-b border-gray-300 py-5 px-12">
+          <a href=""><img src="assets/img/logo.png" alt="Tenantviews logo" class="h-8"></a>
+          <div>
+               <p class="font-medium text-base">Tenant referencing report</p>
+               <span>15/02/2024 - 10:12 am</span>
+          </div>
+     </header>
+     <!-- MAIN DIV -->
+     <main class="max-w-[900px] mx-auto">
+          <!-- APPLICATION DETAILS SECTION -->
+          <section class="flex justify-between my-9 pb-5 border-b border-gray-300">
+               <div class="max-w-80 space-y-4">
+                    <h2 class="font-semibold text-base">Applicant details:</h2>
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Name</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Anna Stevens</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Mobile number</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">0731829****</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Rent</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">£2000 per calendar month</td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="max-w-80">
+                    <h2 class="font-semibold text-base">Rental address:</h2>
+                    <p class="text-gray-400 pb-2">32 London Bridge Street, London, SE1 9SG, UNITED KINGDOM</p>
+                    <h2 class="font-semibold text-base">Check requested by:</h2>
+                    <p class="text-gray-400 pb-2">Example & Co</p>
+               </div>
+          </section>
+
+          <!-- TENANT OVERVIEW SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Tenant overview</h3>
+                    <p class="flex items-center gap-2 text-green-600">Verified</p>
+               </div>
+               <div class="border-b border-gray-600 m-4 pb-2">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Name</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Anna Stevens</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Mobile number</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">0731829****</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Rent</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">£2000 per calendar month</td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="flex flex-wrap gap-x-4 m-4 mb-0">
+                    <h3 class="w-full font-semibold text-base mb-4">Summary</h3>
+                    <div class="flex justify-between items-center basis-0 flex-grow rounded-lg bg-gradient-to-b from-green-600 to-green-700 text-white py-2.5 px-6">
+                         <div>
+                              <span>Overall summary</span>
+                              <p class="font-bold text-base">Pass</p>
+                         </div>
+                         <div class="w-12 h-12 rounded-full border-2 border-white"></div>
+                    </div>
+                    <div class="flex items-center py-2.5 px-6 rounded-lg border border-green-600 bg-gray-100">
+                         <p class="font-medium">Risk level : <span class="font-bold text-green-600 uppercase">low</span></p>
+                    </div>
+               </div>
+          </section>
+
+          <!-- PROOF SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Proof of address</h3>
+                    <p class="flex items-center gap-2 text-green-600">Verified</p>
+               </div>
+               <div class="m-4 mb-0">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Address</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">123 Main st., Anytown, USA</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Verified by</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Uitility bills and bank statement</td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+
+          <!-- ID VERIFICATION SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-9">
+               <div class="p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Id Verification</h3>
+               </div>
+               <div class="border-b border-gray-600 m-4 pb-2">
+                    <table class="w-full">
+                         <tr class="flex flex-wrap">
+                              <td class="flex-grow basis-0 pb-1.5 pr-2">Passport :</td>
+                              <td class="pl-4 text-green-600">Verified</td>
+                         </tr>
+                         <tr class="flex flex-wrap">
+                              <td class="flex-grow basis-0 pb-1.5 pr-2">Driving license :</td>
+                              <td class="pl-4 text-green-600">Verified</td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="m-4 mb-0">
+                    <h3 class="w-full font-semibold text-base mb-4">Credit check summary</h3>
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Credit score</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">750</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Outstanding debts</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">None</td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+     </main>
+     <!-- FOOTER -->
+     <footer class="bg-gray-100 pt-6 px-12 pb-8">
+          <div class="flex justify-between items-center w-full pb-6 mb-6 border-b border-gray-600">
+               <div>
+                    <p class="font-medium text-base">Legal disclaimers</p>
+                    <span class="text-xs text-slate-500">A disclaimer that shows users that you know the law and will defend your claim against copyright infringement</span>
+               </div>
+               <div class="font-medium text-sm">Page 1</div>
+          </div>
+          <div class="flex justify-between items-center w-full">
+               <a href=""><img src="assets/img/logo.png" alt="Tenantviews logo" class="h-6"></a>
+               <div class="flex items-center gap-8 font-medium text-slate-500">
+                    <a href="">Privacy</a>
+                    <a href="">Terms & conditions</a>
+               </div>
+          </div>
+     </footer>
+</body>
+
+</html>
