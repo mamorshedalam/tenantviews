@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- TITLE & FAVICON -->
+     <link rel="icon" href="./assets/img/logo/favicon.png" />
+     <title>Tenantviews | Dashboard</title>
+
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+     <!-- TAILWIND CSS -->
+     <link href="./assets/css/output.css" rel="stylesheet">
+     <!-- ALPINE JS -->
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+     <!-- CUSTOM CSS -->
+     <style>
+     </style>
+</head>
+
+<body class="max-w-[1000px] mx-auto bg-white text-slate-950 text-sm">
+     <!-- HEADER -->
+     <header class="relative flex justify-between items-center bg-gray-100 border-b border-gray-300 text-white py-5 px-12">
+          <a href=""><img src="assets/img/logo.png" alt="Tenantviews logo" class="h-8"></a>
+          <div class="relative z-10">
+               <p class="font-medium text-base">Tenant referencing report</p>
+               <span>15/02/2024 - 10:12 am</span>
+          </div>
+          <div class="absolute top-0 right-0 z-0"><img src="assets/img/Ellipse-blue.png" alt="ellipse blue shape"></div>
+     </header>
+
+     <!-- MAIN DIV -->
+     <main class="max-w-[900px] mx-auto my-9">
+
+          <!-- BANK VERIFICATION SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Open banking & affordability</h3>
+               </div>
+               <div class="border-b border-gray-600 m-4 pb-2">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Bank verified</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Income</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">$3,000/mo</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Spending</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">$2,000/mo</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Affordability</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">15x Rent</td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="m-4 mb-0">
+                    <h3 class="w-full font-semibold text-base mb-4">Employment verification</h3>
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Employer</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">ABC Corporation</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Position</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Software engineer</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Status</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Permanent</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Income verified</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+
+          <!-- PREVIOUS LANDLORD SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Previous landlord reference</h3>
+                    <p class="flex items-center gap-2 text-green-600"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_6198_37)">
+                                   <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                        fill="#00AA55" />
+                                   <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                              </g>
+                              <defs>
+                                   <clipPath id="clip0_6198_37">
+                                        <rect width="20" height="20" fill="white" />
+                                   </clipPath>
+                              </defs>
+                         </svg>
+                         Verified</p>
+               </div>
+               <div class="m-4 mb-0">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Landlord</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Jane smith</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Tenancy history:</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Good</td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Recommendation</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">Positive</td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+
+          <!-- ADDITIONAL SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Additional checks</h3>
+               </div>
+               <div class="m-4 mb-0">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Right to rent</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Other check:</td>
+                              <td>:</td>
+                              <td class="pl-4 text-gray-400">None</td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+
+          <!-- RECOMMENTATION SECTION -->
+          <section class="border border-gray-600 rounded-lg pb-5 mb-5">
+               <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
+                    <h3 class="font-semibold text-base">Conclusion and recommentation</h3>
+               </div>
+               <div class="m-4 mb-0">
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Final recommendation</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+
+          <!-- SIGNATURE -->
+          <section class="mt-16">
+               Signature
+          </section>
+     </main>
+
+     <!-- FOOTER -->
+     <footer class="bg-gray-100 pt-6 px-12 pb-8">
+          <div class="flex justify-between items-center w-full pb-6 mb-6 border-b border-gray-600">
+               <div>
+                    <p class="font-medium text-base">Legal disclaimers</p>
+                    <span class="text-xs text-slate-500">A disclaimer that shows users that you know the law and will defend your claim against copyright infringement</span>
+               </div>
+               <div class="font-medium text-sm">Page 2</div>
+          </div>
+          <div class="flex justify-between items-center w-full">
+               <a href=""><img src="assets/img/logo.png" alt="Tenantviews logo" class="h-6"></a>
+               <div class="flex items-center gap-8 font-medium text-slate-500">
+                    <a href="">Privacy</a>
+                    <a href="">Terms & conditions</a>
+               </div>
+          </div>
+     </footer>
+</body>
+
+</html>

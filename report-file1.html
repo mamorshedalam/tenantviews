@@ -24,15 +24,17 @@
 
 <body class="max-w-[1000px] mx-auto bg-white text-slate-950 text-sm">
      <!-- HEADER -->
-     <header class="relaitve flex justify-between items-center bg-gray-100 border-b border-gray-300 py-5 px-12">
+     <header class="relative flex justify-between items-center bg-gray-100 border-b border-gray-300 text-white py-5 px-12">
           <a href=""><img src="assets/img/logo.png" alt="Tenantviews logo" class="h-8"></a>
-          <div>
+          <div class="relative z-10">
                <p class="font-medium text-base">Tenant referencing report</p>
                <span>15/02/2024 - 10:12 am</span>
           </div>
+          <div class="absolute top-0 right-0 z-0"><img src="assets/img/Ellipse-blue.png" alt="ellipse blue shape"></div>
      </header>
+
      <!-- MAIN DIV -->
-     <main class="max-w-[900px] mx-auto">
+     <main class="max-w-[900px] mx-auto my-9">
           <!-- APPLICATION DETAILS SECTION -->
           <section class="flex justify-between my-9 pb-5 border-b border-gray-300">
                <div class="max-w-80 space-y-4">
@@ -67,7 +69,21 @@
           <section class="border border-gray-600 rounded-lg pb-5 mb-5">
                <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
                     <h3 class="font-semibold text-base">Tenant overview</h3>
-                    <p class="flex items-center gap-2 text-green-600">Verified</p>
+                    <p class="flex items-center gap-2 text-green-600">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_6198_37)">
+                                   <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                        fill="#00AA55" />
+                                   <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                              </g>
+                              <defs>
+                                   <clipPath id="clip0_6198_37">
+                                        <rect width="20" height="20" fill="white" />
+                                   </clipPath>
+                              </defs>
+                         </svg>
+                         Verified
+                    </p>
                </div>
                <div class="border-b border-gray-600 m-4 pb-2">
                     <table>
@@ -95,7 +111,13 @@
                               <span>Overall summary</span>
                               <p class="font-bold text-base">Pass</p>
                          </div>
-                         <div class="w-12 h-12 rounded-full border-2 border-white"></div>
+                         <div>
+                              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <rect x="1" y="1" width="47" height="47" rx="23.5" fill="#00AA55" stroke="white" stroke-width="2" />
+                                   <path d="M34.8762 17.4706C34.2667 16.8431 33.3524 16.8431 32.7429 17.4706L21.3143 29.2353L16.5905 24.3726C15.981 23.7451 15.0667 23.7451 14.4571 24.3726C13.8476 25 13.8476 25.9412 14.4571 26.5686L20.2476 32.5294C20.5524 32.8431 20.8571 33 21.3143 33C21.7714 33 22.0762 32.8431 22.381 32.5294L34.8762 19.6667C35.4857 19.0392 35.4857 18.098 34.8762 17.4706Z"
+                                        fill="white" />
+                              </svg>
+                         </div>
                     </div>
                     <div class="flex items-center py-2.5 px-6 rounded-lg border border-green-600 bg-gray-100">
                          <p class="font-medium">Risk level : <span class="font-bold text-green-600 uppercase">low</span></p>
@@ -107,7 +129,21 @@
           <section class="border border-gray-600 rounded-lg pb-5 mb-5">
                <div class="flex items-center justify-between p-4 border-b border-gray-600 bg-gray-100">
                     <h3 class="font-semibold text-base">Proof of address</h3>
-                    <p class="flex items-center gap-2 text-green-600">Verified</p>
+                    <p class="flex items-center gap-2 text-green-600">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_6198_37)">
+                                   <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                        fill="#00AA55" />
+                                   <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                              </g>
+                              <defs>
+                                   <clipPath id="clip0_6198_37">
+                                        <rect width="20" height="20" fill="white" />
+                                   </clipPath>
+                              </defs>
+                         </svg>
+                         Verified
+                    </p>
                </div>
                <div class="m-4 mb-0">
                     <table>
@@ -126,19 +162,48 @@
           </section>
 
           <!-- ID VERIFICATION SECTION -->
-          <section class="border border-gray-600 rounded-lg pb-5 mb-9">
+          <section class="border border-gray-600 rounded-lg pb-5">
                <div class="p-4 border-b border-gray-600 bg-gray-100">
                     <h3 class="font-semibold text-base">Id Verification</h3>
                </div>
                <div class="border-b border-gray-600 m-4 pb-2">
-                    <table class="w-full">
-                         <tr class="flex flex-wrap">
-                              <td class="flex-grow basis-0 pb-1.5 pr-2">Passport :</td>
-                              <td class="pl-4 text-green-600">Verified</td>
+                    <table>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Passport</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600">
+                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
                          </tr>
-                         <tr class="flex flex-wrap">
-                              <td class="flex-grow basis-0 pb-1.5 pr-2">Driving license :</td>
-                              <td class="pl-4 text-green-600">Verified</td>
+                         <tr>
+                              <td class="pb-1.5 pr-2">Driving license</td>
+                              <td>:</td>
+                              <td class="flex items-center gap-2 pl-4 text-green-600"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_6198_37)">
+                                             <path d="M10 19.9935C15.5228 19.9935 20 15.5193 20 10C20 4.48081 15.5228 0.0065918 10 0.0065918C4.47715 0.0065918 0 4.48081 0 10C0 15.5193 4.47715 19.9935 10 19.9935Z"
+                                                  fill="#00AA55" />
+                                             <path d="M9.1981 15.3157L4.46997 11.6323L5.81435 9.90696L8.71778 12.1688L13.5097 5.25415L15.3078 6.49978L9.1981 15.3157Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                             <clipPath id="clip0_6198_37">
+                                                  <rect width="20" height="20" fill="white" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                                   Verified
+                              </td>
                          </tr>
                     </table>
                </div>
@@ -159,6 +224,7 @@
                </div>
           </section>
      </main>
+
      <!-- FOOTER -->
      <footer class="bg-gray-100 pt-6 px-12 pb-8">
           <div class="flex justify-between items-center w-full pb-6 mb-6 border-b border-gray-600">
